@@ -1,5 +1,5 @@
 {
-    "name": "convert-color",
+    "name": "convert-color-js",
     "version": "1.0.0",
     "description": "Convert colors between different formats",
     "main": "index.js",

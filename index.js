@@ -117,7 +117,6 @@ function convertHslRgb(hslInput) {
 
 function convertColor(color, outputType) {
   if (!isValidColor(color)) return
-
   if (isHex(color)) {
     // possible options are rgb or hsl
     if (outputType === 'rgb') {
@@ -183,33 +182,13 @@ function convertColor(color, outputType) {
   }
 }
 
-// ==================================
-// Our exports go here
-// ==================================
-
 module.exports = {
-  isHex: function(str) {
-    return isHex(str)
-  },
-  isHexa: function(str) {
-    return isHexa(str)
-  },
-  isRgb: function(str) {
-    return isRgb(str)
-  },
-  isRgba: function(str) {
-    return isRgba(str)
-  },
-  isHsl: function(str) {
-    return isHsl(str)
-  },
-  isHsla: function(str) {
-    return isHsla(str)
-  },
-  isValidColor: function(color) {
-    return isValidColor(color)
-  },
-  convert: function(color, outputType) {
-    return convertColor(color, outputType)
-  }
+  isHex: (str) => isHex(str),
+  isHexa: (str) => isHexa(str),
+  isRgb: (str) => isRgb(str),
+  isRgba: (str) => isRgba(str),
+  isHsl: (str) => isHsl(str),
+  isHsla: (str) => isHsla(str),
+  isValidColor: (color) => isValidColor(color),
+  convert: (color, outputType) => convertColor(color, outputType)
 }
