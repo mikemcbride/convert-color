@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Convert colors between different formats",
     "main": "index.js",
+    "files": ["index.js"],
     "scripts": {
         "test": "uvu"
     },
