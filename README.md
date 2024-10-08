@@ -15,7 +15,7 @@ npm install convert-color-js
 The module has a number of methods available on it to aid in converting colors. I've detailed the methods, how they're used, and what the expected output is below:
 
 ```js
-const convertColor = require('convert-color-js')
+import convertColor from 'convert-color-js'
 
 // check if a string is a HEX value
 convertColor.isHex('#f06') // => true

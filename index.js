@@ -7,17 +7,17 @@
 // - hsl(100, 50%, 80%), hsla(100, 50%, 80%, 0.3), hsla(100, 50%, 80%, 30%)
 
 // common utils
-const hslRegex = require('hsl-regex')
-const hslaRegex = require('hsla-regex')
-const rgbRegex = require('rgb-regex')
-const rgbaRegex = require('rgba-regex')
+import hslRegex from 'hsl-regex'
+import hslaRegex from 'hsla-regex'
+import rgbRegex from 'rgb-regex'
+import rgbaRegex from 'rgba-regex'
 
 // hex <-> rgb
-const rgbHex = require('rgb-hex')
-const hexRgb = require('hex-rgb')
+import rgbHex from 'rgb-hex'
+import hexRgb from 'hex-rgb'
 
 // hsl <-> rgb
-const hslRgb = require('hsl-to-rgb-for-reals')
+import hslRgb from 'hsl-to-rgb-for-reals'
 const rgbHsl = function(color) {
   return hexHsl(rgbHex(color))
 }
@@ -31,7 +31,7 @@ const rgbaHsla = function(color) {
 }
 
 // hsl <-> hex
-const hexHsl = require('hex-to-hsl')
+import hexHsl from 'hex-to-hsl'
 // the HSL to HEX package on npm simply converts HSL to RGB, then RGB to HEX.
 // we can do that here ourselves:
 const hslHex = function(hslInput) {
@@ -182,7 +182,7 @@ function convertColor(color, outputType) {
   }
 }
 
-module.exports = {
+export default {
   isHex: (str) => isHex(str),
   isHexa: (str) => isHexa(str),
   isRgb: (str) => isRgb(str),
