@@ -1,6 +1,6 @@
-const { test } = require('uvu')
-const assert = require('uvu/assert')
-const converter = require('./index.js')
+import { test } from 'uvu'
+import * as assert from 'uvu/assert';
+import converter from './index.js'
 
 // hsl/hex/rgb and hsla/hexa/rgba are all equivalent conversions.
 // we are testing that our conversion script works

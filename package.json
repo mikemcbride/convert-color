@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Convert colors between different formats",
     "main": "index.js",
+    "type": "module",
     "files": ["index.js"],
     "scripts": {
         "test": "uvu"
@@ -22,17 +23,17 @@
     },
     "homepage": "https://github.com/mikemcbride/convert-color#readme",
     "dependencies": {
-        "hex-rgb": "^4.1.0",
+        "hex-rgb": "^5.0.0",
         "hex-to-hsl": "^1.0.2",
         "hsl-regex": "^1.0.0",
         "hsl-to-rgb-for-reals": "^1.1.1",
         "hsla-regex": "^1.0.0",
-        "rgb-hex": "^3.0.0",
+        "rgb-hex": "^4.0.0",
         "rgb-regex": "^1.0.1",
         "rgb-to-hsl": "^0.0.3",
         "rgba-regex": "^1.0.0"
     },
     "devDependencies": {
-        "uvu": "^0.3.3"
+        "uvu": "^0.5.6"
     }
 }
